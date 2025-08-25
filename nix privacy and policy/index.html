@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>nix — privacy policy</title>
+  <meta name="description" content="nix privacy policy" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --card: #f8f8f8;
+      --text: #0f1011;
+      --muted: #5b5f66;
+      --border: #e9e9ea;
+      --radius: 10px;
+      --maxw: 720px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0c0d;
+        --card: #111315;
+        --text: #f3f4f6;
+        --muted: #b3b9c3;
+        --border: #1f2329;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 32px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      max-width: 40vw;   /* responsive: max 40% of viewport width */
+      max-height: 40vw;
+      border-radius: var(--radius);
+      margin: 0 auto 16px;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: var(--radius);
+      display: block;
+    }
+
+    h1 { margin: 0; font-size: 28px; text-transform: lowercase; }
+    .subtle { color: var(--muted); font-size: 14px; text-transform: lowercase; }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      animation: fadeUp .6s ease both;
+      margin-bottom: 20px;
+    }
+
+    h2 { margin-top: 0; text-transform: lowercase; }
+
+    footer {
+      margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; text-transform: lowercase;
+    }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <img src="assets/icon.svg" alt="nix app icon" />
+      </div>
+      <h1>nix</h1>
+      <div class="subtle">privacy policy</div>
+    </header>
+
+    <section class="card">
+      <h2>privacy first</h2>
+      <p>nix is an open-source application. it does not collect, store, or share any personal information. we do not use analytics, advertising, or tracking technologies.</p>
+      <p>everything runs locally on your device. your data always stays with you.</p>
+    </section>
+
+    <section class="card">
+      <h2>how the app works</h2>
+      <p>nix is designed to work entirely offline and relies only on the features of your device. the app requests minimal permissions required for its core functionality (such as accessing files if you choose to open them). these permissions are used solely for their intended purpose and never for tracking or profiling.</p>
+      <p>no information is sent to external servers. the app functions independently on your device and does not rely on cloud services.</p>
+      <p>because the project is open-source, anyone can review the code to verify that it operates as described.</p>
+    </section>
+
+    <section class="card">
+      <h2>third-party sources</h2>
+      <p>nix is only officially distributed by the developer through trusted sources such as github. we are not responsible for any issues, damages, or security risks that may arise if the app is downloaded or obtained from unofficial sources or modified by third parties.</p>
+    </section>
+
+    <section class="card">
+      <h2>test app availability</h2>
+      <p>the test version of nix is only available through the developer’s official google drive link associated with <strong>bawiceu1428@gmail.com</strong>. any other distributions are not authorized and may pose security risks.</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> nix. all rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
